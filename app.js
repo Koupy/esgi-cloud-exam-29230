@@ -43,8 +43,6 @@ app.get("/articles", async function (req, res, next) {
   res.send(JSON.stringify(articles, null, 2));
 });
 
-app.use("/users", usersRouter);
-
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
